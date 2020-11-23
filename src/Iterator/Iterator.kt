@@ -1,6 +1,6 @@
 package Iterator
 
 interface Iterator {
-    abstract fun hasNext()
-    abstract fun next()
+    abstract fun hasNext(): Boolean
+    abstract fun next(): Any?
 }

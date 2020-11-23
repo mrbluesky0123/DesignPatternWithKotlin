@@ -1,5 +1,5 @@
 package Iterator
 
 interface Aggregate {
-    fun iterator()
+    fun iterator(): Iterator
 }

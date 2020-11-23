@@ -1,3 +1,3 @@
 package Iterator
 
-class Book(val name: String) {}
+data class Book(val name: String)

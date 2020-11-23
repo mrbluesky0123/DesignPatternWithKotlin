@@ -17,8 +17,8 @@ class BookShelf(val maxSize: Int): Aggregate {
         return last
     }
 
-    override fun iterator() {
-        return new BookShelfIterator(this)
+    override fun iterator(): Iterator {
+        return BookShelfIterator(this)
     }
 
 }
