@@ -3,10 +3,16 @@ package proxy
 import java.lang.reflect.Proxy
 
 
-fun main(args: ArrayList<String>) {
+fun main(args: Array<String>) {
     val person1: PersonBean = PersonBeanImpl()
     val ownerProxy: PersonBean = getOwnerProxy(person1)
-    ownerProxy.
+    ownerProxy.setName("Mark")
+    ownerProxy.setGender("male")
+    ownerProxy.setInterest("reading")
+    ownerProxy.setHotOrNotRating(10)
+
+    val nonOwnProxy: PersonBean = getNonOwnerProxy(person1);
+    nonOwnProxy.setName("Park")
 
 }
 
