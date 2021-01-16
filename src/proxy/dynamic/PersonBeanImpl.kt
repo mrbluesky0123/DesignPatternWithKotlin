@@ -1,4 +1,4 @@
-package proxy
+package proxy.dynamic
 
 class PersonBeanImpl: PersonBean {
 

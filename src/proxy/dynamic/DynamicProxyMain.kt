@@ -1,4 +1,4 @@
-package proxy
+package proxy.dynamic
 
 import java.lang.reflect.Proxy
 
@@ -18,11 +18,13 @@ fun main(args: Array<String>) {
 
 fun getOwnerProxy(personBean: PersonBean): PersonBean {
     return Proxy.newProxyInstance(personBean::class.java.classLoader, personBean::class.java.interfaces,
-        OwnerInvocationHandler(personBean)) as PersonBean
+        OwnerInvocationHandler(personBean)
+    ) as PersonBean
 }
 
 
 fun getNonOwnerProxy(personBean: PersonBean): PersonBean {
     return Proxy.newProxyInstance(personBean::class.java.classLoader, personBean::class.java.interfaces,
-        NonOwnerInvocationHandler(personBean)) as PersonBean
+        NonOwnerInvocationHandler(personBean)
+    ) as PersonBean
 }

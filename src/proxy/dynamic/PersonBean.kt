@@ -1,4 +1,4 @@
-package proxy
+package proxy.dynamic
 
 interface PersonBean {
     fun getName(): String
