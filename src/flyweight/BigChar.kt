@@ -20,6 +20,7 @@ class BigChar(private var charname: Char) {
                 buf.append(l)
                 buf.append("\n")
             }
+            println("${this.charname} is created..")
             this.fontdata = buf.toString()
         } catch(e: IOException) {
             this.fontdata = this.charname + "?"
