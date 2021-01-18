@@ -17,7 +17,7 @@ class PrinterProxy: Printable {
         this.name = name
     }
 
-    override fun getPrinterNAme(): String = this.name
+    override fun getPrinterName(): String = this.name
 
     override fun print(str: String) {
         this.realize()
