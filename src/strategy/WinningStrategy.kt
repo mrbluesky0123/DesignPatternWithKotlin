@@ -15,7 +15,7 @@ class WinningStrategy(private val seed: Int): Strategy {
         return this.prevHand!!
     }
 
-    override fun strudy(win: Boolean) {
+    override fun study(win: Boolean) {
         this.won = win
     }
 
